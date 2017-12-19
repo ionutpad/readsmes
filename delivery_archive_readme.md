@@ -1,4 +1,4 @@
-###Delivery Archive For AWS Environments.
+### Delivery Archive For AWS Environments.
 
 ##### Make the environment to generate delivery zip archives by using this command:
 ```bash
@@ -36,5 +36,5 @@ Available modes:
    delete      delete all archives deliveries
 ```
 
-######After a zip archive it's unarchived the zip file it's marked as been processed by the env based on php method gethostname() in order to not processed a zip file multiple times by the same env and to be safe using the unarchive command in a while bash block. 
-######In order to ignore the processed flags of zip file use --force flag.
+###### After a zip archive it's unarchived the zip file it's marked as been processed by the env based on php method gethostname() in order to not processed a zip file multiple times by the same env and to be safe using the unarchive command in a while bash block. 
+###### In order to ignore the processed flags of zip file use --force flag.
