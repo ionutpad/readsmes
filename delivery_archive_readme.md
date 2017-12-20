@@ -5,7 +5,7 @@
 sudo -u www-data php index.php 'oat\taoDeliveryRdf\scripts\tools\RegisterDeliveryArchive'
 ```
 
-This command will add a new storage directory (deliveriesArchivesDirectory) where to save the deliveries 
+This command will add a new storage directory (deliveriesArchives) where to save the deliveries 
 And will subscribe to fallowing events:
 - DeliveryCreated (it will generate an archive of the delivery after compilation and save the zip)
 - DeliveryRemoved (it will remove the zip generated)
