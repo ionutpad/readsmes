@@ -5,8 +5,8 @@
 sudo -u www-data php index.php 'oat\taoDeliveryRdf\scripts\tools\RegisterDeliveryArchive'
 ```
 
-This command will add a new storage directory (deliveriesArchives) where to save the deliveries 
-And will subscribe to fallowing events:
+This command will add a new storage directory (deliveriesArchives) where the archives will be saved.
+And it will subscribe to the fallowing events:
 - DeliveryCreated (it will generate an archive of the delivery after compilation and save the zip)
 - DeliveryRemoved (it will remove the zip generated)
 
@@ -36,5 +36,5 @@ Available modes:
    delete      delete all archives deliveries
 ```
 _Note_:
-> After a zip archive it's unarchived the zip file it's marked as been processed by the env based on php method gethostname() in order to not processed a zip file multiple times by the same env and to be safe using the unarchive command in a while bash block. 
+> After a zip it's unarchived the zip file it's marked as been processed by the env based on php method gethostname() in order to not processed a zip file multiple times by the same env and to be safe using the unarchive command in a while bash block. 
 > In order to ignore the processed flags of zip file use --force flag.
